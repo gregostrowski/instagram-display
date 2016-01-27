@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }

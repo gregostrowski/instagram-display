@@ -1,0 +1,33 @@
+<html lang="en" ng-app="website">
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+        
+        <link href="http://fonts.googleapis.com/css?family=Allan:700" rel="stylesheet" type="text/css">
+        <!-- bower:css -->
+        <!-- endinject -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- endinject -->
+        
+        
+        
+    </head>
+    <body>
+        <div ng-controller="IGDisplayController">
+            <div class="picture-container">
+                <a ng-repeat="pic in pictures" href="{{pic.link}}" target="_blank">
+                    <img class="picture" ng-src="{{pic.images.low_resolution.url}}" /> 
+                </a>
+            </div>
+        </div>     
+        
+        
+        <!-- bower:js -->
+        <script src="../bower_components/angular/angular.js"></script>
+        <!-- endinject -->
+        <!-- inject:js -->
+        <script src="js/app.js"></script>
+        <!-- endinject -->   
+    </body>
+</html>
