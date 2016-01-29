@@ -9,3 +9,23 @@ body {
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
 } 
+
+.ig-container {
+    overflow: hidden;
+    
+    .ig-picture-container { 
+        height: 200px; //default to 1 row (overwritten by js)
+        width: 2000px; //default to expecting 20 items in 2 rows (overwritten by js)
+        text-align: center;
+        
+        .ig-pic { 
+            display: inline-block;
+            margin: 0;
+            
+            .ig-pic-img {
+                width: 200px; //(overwritten by js)
+                height: 200px; //(overwritten by js)
+            }
+        }
+    }
+}

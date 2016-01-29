@@ -7,3 +7,16 @@ body {
   -moz-transition: all 0.2s ease 0s;
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s; }
+
+.ig-container {
+  overflow: hidden; }
+  .ig-container .ig-picture-container {
+    height: 200px;
+    width: 2000px;
+    text-align: center; }
+    .ig-container .ig-picture-container .ig-pic {
+      display: inline-block;
+      margin: 0; }
+      .ig-container .ig-picture-container .ig-pic .ig-pic-img {
+        width: 200px;
+        height: 200px; }

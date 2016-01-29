@@ -14,13 +14,21 @@
         
     </head>
     <body>
-        <div ng-controller="IGDisplayController">
-            <div class="picture-container">
-                <a ng-repeat="pic in pictures" href="{{pic.link}}" target="_blank">
-                    <img class="picture" ng-src="{{pic.images.low_resolution.url}}" /> 
-                </a>
+        <section></section>
+        <section></section>
+        <section>
+            <div ng-controller="IGDisplayController">
+                <div class="ig-container" >
+                    <div class="ig-picture-container" ng-style="{'width': width + 'px', 'height': (imgDimensions * rows) + 'px'}">
+                        <a ng-repeat="pic in pictures" class="ig-pic" href="{{pic.link}}" target="_blank">
+                            <img class="ig-pic-img" ng-style="{'width': imgDimensions + 'px', 'height': imgDimensions + 'px'}" ng-src="{{pic.images.low_resolution.url}}" /> 
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>     
+        </section>
+        <section></section>
+             
         
         
         <!-- bower:js -->
